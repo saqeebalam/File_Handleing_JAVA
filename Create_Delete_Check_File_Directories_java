@@ -1,0 +1,31 @@
+import java.io.File;
+import java.io.IOException;
+
+public class FileCreation {
+	public static void main(String[] args) {
+		File f=new File("C://Test//test1");
+		File f1=new File("C://Test//test2");
+//		try {
+//			boolean val=f.createNewFile();//here we create file 
+//			System.out.println("FileCreated="+val);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		boolean val=f.delete();//here we delete file
+//		boolean val1=f1.delete();
+//		
+//		if(val==true || val1==true )
+//		System.out.println("File deleated="+val);
+//		else
+//			System.out.println("File Already Deleated="+val);
+//		boolean val=f.exists();//here we check file already exits
+//		boolean val2=f1.exists();
+//		System.out.println(val+" "+val2);
+	    boolean val=f.mkdir();//here we create directories
+	    boolean val1=f1.mkdirs();
+	    System.out.println(val+" "+val1);
+	}
+
+	
+}
